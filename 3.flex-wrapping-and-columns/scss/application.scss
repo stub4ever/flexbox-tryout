@@ -14,9 +14,9 @@
 .box {
 	
 	// width:calc(33.333333% - 20px);// Re-size width with margin between
-	// margin:10px; 
+	// margin:10px; // takes margin contour over the box container
 	width: 33.333333%; // Fill in the white caps
-	//width: 300px; // Attribute box width 300px > break into caps when it fit
+	//width: 300px; // Attribute box width 300px > break into whitecaps untill it fit
 }
 
 /* Some default styles to make each box visible */

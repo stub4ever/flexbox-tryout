@@ -1,3 +1,9 @@
+/* Write flex over here */
+.container {
+  display: flex;
+  justify-content: space-between;
+  border: 10px solid mistyrose; }
+
 .box {
   color: white;
   font-size: 100px;

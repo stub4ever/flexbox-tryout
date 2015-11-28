@@ -1,3 +1,20 @@
+/* Write flex over here */
+
+.container {
+	display: flex;
+	justify-content: space-between; // Set the flex container a space between equally
+	// justify-content: space-around; // Also set the flex container a space between equally with 1/2 smaller whitespace right/left on the cornor
+	// justify-content: center; // Allow to center flex container
+	// justify-content: flex-end; // sort itself at the end of the flex container
+	// justify-content: flex-start; // The flex container already hit at the start
+	border:10px solid mistyrose;
+
+	// oppersite direction main axis from top to bottem
+	// justify-content: space-between;
+	// flex-direction: column;
+	// min-height: 100vh; // also change the .box > font-size: 20px; > to see the changes
+}
+
 .box {
   color:white;
   font-size: 100px;

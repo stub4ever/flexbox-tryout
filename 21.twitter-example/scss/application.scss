@@ -1,0 +1,131 @@
+body{
+    font-family: verdana, sans-serif;
+    background-color: rgb(215,235,243);
+}
+
+.tweet{
+    background-color: white;
+    margin: 2em;
+}
+
+.tweet > div{
+    padding: 1em;
+}
+
+.reply{
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(246, 246, 246);
+    padding: 1em;
+}
+
+.tweet{
+    border-radius: 10px;
+}
+
+.reply > div{
+    background-color: white;
+    padding: 1em;
+}
+
+.content h2{
+    font-weight: bold;
+}
+
+.content h2 span{
+    font-weight: normal;
+}
+
+.content h2 span,
+.content time,
+.meta li.retweets span:nth-child(2),
+.meta li.favorites span:nth-child(2),
+.reply > div
+{
+    color: #888888;
+}
+
+.meta li.retweets span:first-child,
+.meta li.favorites span:first-child{
+    font-weight: bold;
+}
+
+a:visited,
+a,
+.reply > div > span{
+    color: rgb(31, 152, 199);
+    text-decoration: none;
+}
+
+.tweet {
+    width: 600px;
+}
+
+.people > li > img{
+    width: 25px;
+}
+
+
+/* layout */
+
+.tweet .content,
+.tweet .reply{
+    padding-left: 70px;
+}
+
+.content > img{
+    position: absolute;
+    margin-left: -60px;
+}
+
+.content > time:first-of-type{
+    position: absolute;
+    margin-top: -1.5em;
+    margin-left: 30em;
+}
+
+.content > *{
+    padding: .25em 0;
+}
+
+.content > time:nth-of-type(2){
+    display: block;
+    margin-top: 1em;
+}
+
+.people > ul{
+    padding-left: 1em;
+    align-items: center;
+}
+.people > li{
+    padding-right: .25em;
+}
+.actions > li
+{
+    padding-right: 1em;
+}
+.retweets{
+    padding: 1em 1em 1em 0;
+}
+.favorites{
+    border: 1px solid lightgrey;
+    padding: 1em;
+}
+.meta > *{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+// Write Flex here 
+
+div.tweet {
+    .actions, .people, .meta {
+    display: flex;
+    }
+}
+
+.meta .retweets,
+.meta .favorites{
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+}

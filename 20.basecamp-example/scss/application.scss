@@ -1,0 +1,56 @@
+body{
+    font-family: verdana, sans-serif;
+}
+
+.products > div{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#efefef));
+    border-radius: 10px;
+    box-shadow: 0 0 4px;
+    width: 13em;
+    border: 1px solid grey;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.products > div > h3{
+    color: red;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.products > div > h2{
+    font-size: 1.5em;
+    letter-spacing: .05em;
+    margin-top: 1em;
+}
+
+.products > div > p{
+    line-height: 1.25em;
+    font-size: .85em;
+    text-align: center;
+}
+
+html, body{
+    height: 100%;
+}
+
+// Write flex here
+
+.products {
+    height: 100%;
+    display: flex; // flex container
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    
+    & > div {
+        display: flex; // flex container
+        flex-flow: column;
+        align-items: center; // center images > without strecthing img
+    }
+    & > div:nth-child(2){
+    margin: 0 2em;
+    }
+}
+
+
